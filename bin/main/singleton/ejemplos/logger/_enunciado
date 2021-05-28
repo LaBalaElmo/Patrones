@@ -1,0 +1,10 @@
+se tienen diferentes clases especificas que manejan sus gets/sets, estas clases son instanciadas y utilizadas desde
+un cliente. se quiere saber que acciones realiza el cliente con las diferentes clases usando un logger.
+
+Clases:
+Estudiantes
+Profesor
+Director
+
+Singleton Para el Logger.
+  
