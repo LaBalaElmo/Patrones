@@ -1,0 +1,77 @@
+package ejercciosPrimerParcial.prototype;
+
+public class Client {
+	public static void main(String[] args) {
+		ContratoDocente contrato = new ContratoDocente();
+		contrato.setAccesoPlataforma(true);
+		contrato.setApellido("");
+		contrato.setCargaHoraria(80);
+		contrato.setCursoEducacionSuperior(true);
+		contrato.setMarcadoBiometrico(false);
+		contrato.setMarcadoHoraDeEntrada("08:00");
+		contrato.setMarcadoHoraDeSalida("18:00");
+		contrato.setNombre("");
+		contrato.setSueldo(5000);
+
+		ContratoDocente contrato1 = (ContratoDocente) contrato.clone();
+		contrato1.setNombre("Jose");
+		contrato1.setApellido("Perez");
+		contrato1.showInfo();
+		ContratoDocente contrato2 = (ContratoDocente) contrato.clone();
+		contrato2.setNombre("Pedro");
+		contrato2.setApellido("Fernandez");
+		contrato2.showInfo();
+		ContratoDocente contrato3 = (ContratoDocente) contrato.clone();
+		contrato3.setNombre("Hector");
+		contrato3.setApellido("Salamanca");
+		contrato3.showInfo();
+		ContratoDocente contrato4 = (ContratoDocente) contrato.clone();
+		contrato4.setNombre("Barry");
+		contrato4.setApellido("Seal");
+		contrato4.showInfo();
+		ContratoDocente contrato5 = (ContratoDocente) contrato.clone();
+		contrato5.setNombre("Pablo");
+		contrato5.setApellido("Escobar");
+		contrato5.showInfo();
+		ContratoDocente contrato6 = (ContratoDocente) contrato.clone();
+		contrato6.setNombre("Pacho");
+		contrato6.setApellido("Hernandez");
+		contrato6.showInfo();
+		ContratoDocente contrato7 = (ContratoDocente) contrato.clone();
+		contrato7.setNombre("Johnny");
+		contrato7.setApellido("Mamani");
+		contrato7.showInfo();
+		ContratoDocente contrato8 = (ContratoDocente) contrato.clone();
+		contrato8.setNombre("Joel");
+		contrato8.setApellido("Choque");
+		contrato8.showInfo();
+		ContratoDocente contrato9 = (ContratoDocente) contrato.clone();
+		contrato9.setNombre("Rafael");
+		contrato9.setApellido("Aguirre");
+		contrato9.showInfo();
+		ContratoDocente contrato10 = (ContratoDocente) contrato.clone();
+		contrato10.setNombre("Juan");
+		contrato10.setApellido("Colque");
+		contrato10.showInfo();
+		ContratoDocente contrato11 = (ContratoDocente) contrato.clone();
+		contrato11.setNombre("Juan");
+		contrato11.setApellido("Ledesma");
+		contrato11.showInfo();
+		ContratoDocente contrato12 = (ContratoDocente) contrato.clone();
+		contrato12.setNombre("Pablo");
+		contrato12.setApellido("Perez");
+		contrato12.showInfo();
+		ContratoDocente contrato13 = (ContratoDocente) contrato.clone();
+		contrato13.setNombre("Pedro");
+		contrato13.setApellido("Mamani");
+		contrato13.showInfo();
+		ContratoDocente contrato14 = (ContratoDocente) contrato.clone();
+		contrato14.setNombre("Marcelo");
+		contrato14.setApellido("Quispe");
+		contrato14.showInfo();
+		ContratoDocente contrato15 = (ContratoDocente) contrato.clone();
+		contrato15.setNombre("Rolando");
+		contrato15.setApellido("Rejas");
+		contrato15.showInfo();
+	}
+}

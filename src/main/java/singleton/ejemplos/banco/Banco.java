@@ -3,6 +3,7 @@ package singleton.ejemplos.banco;
 public class Banco {
       private static Banco instance = null;
       private int saldo;
+      
       private Banco(){
           saldo=900;
           System.out.println("INFO> Iniciando Saldo: "+saldo);
