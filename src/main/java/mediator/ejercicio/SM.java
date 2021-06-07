@@ -1,9 +1,9 @@
 package mediator.ejercicio;
 
 public class SM extends Colleague {
-	private boolean certificaciones;
+	private int certificaciones;
 
-	public SM(ICanalDeComunicacion mediator, String name, int ci, boolean certificaciones) {
+	public SM(ICanalDeComunicacion mediator, String name, int ci, int certificaciones) {
 		super(mediator, name, ci);
 		this.certificaciones = certificaciones;
 	}
