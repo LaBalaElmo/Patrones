@@ -1,0 +1,31 @@
+package chainOfResponsability.ejercicio.ejercicio2;
+
+import java.util.Arrays;
+
+public class Algoritmo1 implements IAlgoritmo {
+	private IAlgoritmo next;
+
+	@Override
+	public void setNext(IAlgoritmo handler) {
+		this.next = handler;
+	}
+
+	@Override
+	public IAlgoritmo next() {
+		return this.next;
+	}
+
+	@Override
+	public void revisarAlgoritmo(Persona[] personas) {
+		if (personas.length < 21) {
+			Arrays.sort(personas);
+			System.out.println("Ordenando con el algoritmo 1");
+			for (int i = 0; i < personas.length; i++) {
+				personas[i].info();
+			}
+		} else {
+			this.next.revisarAlgoritmo(personas);
+		}
+
+	}
+}
