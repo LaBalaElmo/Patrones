@@ -13,7 +13,7 @@ public class Prendido implements IStateComputadora {
 		System.out.println("** Estado: Prendiendo computadora **");
 		System.out.println("INFO> prendiendo");
 		for (int i = 0; i < programasAbiertos.length; i++) {
-			programasAbiertos[i]="programa"+i+1;
+			programasAbiertos[i]="programa"+(i+1);
 		}
 		computadora.setProgramasAbiertos(new String[new Random().nextInt(20)]);
 		for (int i = 0; i < computadora.getProgramasAbiertos().length; i++) {

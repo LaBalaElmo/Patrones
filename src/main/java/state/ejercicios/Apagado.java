@@ -11,7 +11,7 @@ public class Apagado implements IStateComputadora {
 
     @Override
     public void handler(Computadora computadora) {
-        System.out.println("** Estado: Apagado **");
+        System.out.println("** Estado: Apagando **");
         computadora.setCPU(new CPU(new Random().nextInt(10),"apagado"));
         computadora.setMemoriaRam(new MemoriaRam(new Random().nextInt(10)));
         computadora.setProgramasAbiertos(new String[0]);
